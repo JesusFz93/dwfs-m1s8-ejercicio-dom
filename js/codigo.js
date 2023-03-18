@@ -32,13 +32,49 @@
 // body.appendChild(footer);
 // console.log(body);
 
-const saludar = () => {
-  console.log("Hola como estan?");
+// Ejecutar atributos y funciones
+// const saludar = () => {
+//   console.log("Hola como estan?");
+// };
+
+// function despedir() {
+//   console.log("adios");
+// }
+
+// const btnDespedir = document.getElementById("btnDespedir");
+// btnDespedir.addEventListener("click", despedir);
+
+// Manipular atributos
+// const subtitulo = document.getElementById("subtitulo");
+// const subtitulo_atributo = subtitulo.getAttribute("class");
+// subtitulo.setAttribute("class", "h2_titulo");
+// const subtitulo_atributo_actualizado = subtitulo.getAttribute("class");
+// console.log(subtitulo_atributo);
+// console.log(subtitulo_atributo_actualizado);
+// console.log(subtitulo);
+
+const cambiarclase = () => {
+  const subtitulo = document.getElementById("subtitulo");
+  const subtitulo_atributo = subtitulo.getAttribute("class");
+  subtitulo.setAttribute("class", "h2_titulo");
+  const subtitulo_atributo_actualizado = subtitulo.getAttribute("class");
+  console.log(subtitulo_atributo);
+  console.log(subtitulo_atributo_actualizado);
+  console.log(subtitulo);
 };
 
-function despedir() {
-  console.log("adios");
-}
+const comprobarclase = () => {
+  const subtitulo = document.getElementById("subtitulo");
+  const comprobar = subtitulo.hasAttribute("class");
+  console.log(comprobar);
+};
 
-const btnDespedir = document.getElementById("btnDespedir");
-btnDespedir.addEventListener("click", despedir);
+const removeratributo = () => {
+  const subtitulo = document.getElementById("subtitulo");
+  subtitulo.removeAttribute("class");
+};
+
+const saludar_otravez = () => {
+  console.log("saludar otra vez");
+  alert("saludar otra vez");
+};

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM y Eventos</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
     <!-- <main>
@@ -18,7 +20,7 @@
       <p>Hola</p>
     </section> -->
 
-    <section>
+    <!-- <section>
       <button onclick="saludar()">Saludar</button>
       <button id="btnDespedir">Despedir</button>
       <img
@@ -27,6 +29,16 @@
         alt="Kohala"
         onmouseenter="saludar()"
       />
+    </section> -->
+
+    <section>
+      <h2 id="subtitulo" class="h2_subtitulo">
+        Esto es un texto de un subtitulo
+      </h2>
+      <button onclick="cambiarclase()">Cambiar clase</button>
+      <button onclick="comprobarclase()">Comprobar clase</button>
+      <button onclick="removeratributo()">Remover clase</button>
+      <button onclick="saludar_otravez()">Saludar</button>
     </section>
 
     <script src="./js/codigo.js"></script>
