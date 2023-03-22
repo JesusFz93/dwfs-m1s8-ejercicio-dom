@@ -37,5 +37,6 @@ const mostrarUsuarios = () => {
 
 const eliminarUusario = (id) => {
   console.log(id);
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
   mostrarUsuarios();
 };
