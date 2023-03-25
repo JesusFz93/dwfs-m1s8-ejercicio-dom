@@ -79,6 +79,16 @@
         <article class="col">
           <form>
             <div class="mb-3">
+              <label for="idInput" class="form-label">ID</label>
+              <input
+                type="text"
+                class="form-control"
+                id="idInput"
+                autocomplete="off"
+                disabled
+              />
+            </div>
+            <div class="mb-3">
               <label for="nombreInput" class="form-label">Nombre</label>
               <input
                 type="text"
@@ -97,6 +107,16 @@
               />
             </div>
             <button
+              id="btnEditar"
+              type="button"
+              class="btn btn-warning"
+              onclick="confirmarEdicion()"
+              style="display: none"
+            >
+              Editar
+            </button>
+            <button
+              id="btnAgregar"
               type="button"
               class="btn btn-success"
               onclick="agregarUsuario()"
